@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--通过全类名即反射方式创建bean，要求类中有默认无惨构造方法-->
+    <bean id="hello" class="com.wayne.bean.User">
+        <!--<property name="name" value="Spring"/>-->
+        <!--<property name="name"><null/></property>--><!--赋值为null-->
+        <constructor-arg name="name" value="宝马"/>
+        <constructor-arg name="car" ref="car"/>
+        <!--为级联属性赋值,属性需要先初始化后才能为级联属性赋值-->
+        <property name="car.price" value="88888"/>
+        <property name="car.speed" value="200"/>
+    </bean>
+
+    <bean id="car" class="com.wayne.bean.Car">
+
+    </bean>
+
+    <bean id="a" class="com.wayne.bean.A">
+        <property name="name">
+            <value><![CDATA[<hello>]]></value>  <!--CDATA装配特殊字符 <hello> -->
+        </property>
+    </bean>
+
+    <bean id="b" class="com.wayne.bean.B">
+        <constructor-arg name="a" type="com.wayne.bean.A" ref="a"/>
+    </bean>
+
+
+    <bean id="person" class="com.wayne.bean.Person">
+        <!--配置集合属性-->
+        <property name="cars">
+            <list>
+                <bean class="com.wayne.bean.Car">
+                    <property name="speed" value="220"/>
+                    <property name="price" value="530000"/>
+                </bean>
+                <bean class="com.wayne.bean.Car">
+                    <property name="price" value="490000"/>
+                    <property name="speed" value="240"/>
+                </bean>
+            </list>
+        </property>
+        <!--配置map属性-->
+        <property name="map">
+            <map>
+                <entry key="你好" value="你好"/>
+                <entry key="你不好" value="你不好"/>
+            </map>
+        </property>
+        <!--配置properties属性-->
+        <property name="properties">
+            <props>
+                <prop key="张三">user</prop>
+                <prop key="李四">hello</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
