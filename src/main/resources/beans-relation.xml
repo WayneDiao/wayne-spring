@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--
+        抽象bean bean的abstract属性为true的bean，这样的bean不能被实例化，只能用来被继承配置
+        若一个bean的class没有被指定，则该bean必须是一个抽象bean
+    -->
+    <bean id="address" class="com.wayne.bean.autowire.Address" p:city="shenZhen^" p:street="fuQiangLu" abstract="true"/>
+    <bean id="address1" class="com.wayne.bean.autowire.Address" p:street="chuanShan" p:city="suiNing"/>
+
+    <!--bena配置的继承，使用parent属性指定继承哪个bean的配置-->
+    <bean id="address2" parent="address" p:street="yiTian"/>
+
+</beans>

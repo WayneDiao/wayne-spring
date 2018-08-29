@@ -1,6 +1,5 @@
-package com.wayne.bean;
+package com.wayne.bean.nonautowire;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**

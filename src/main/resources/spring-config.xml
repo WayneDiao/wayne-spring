@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd
+       ">
 
     <!--通过全类名即反射方式创建bean，要求类中有默认无惨构造方法-->
-    <bean id="hello" class="com.wayne.bean.User">
+    <bean id="hello" class="com.wayne.bean.nonautowire.User">
         <!--<property name="name" value="Spring"/>-->
         <!--<property name="name"><null/></property>--><!--赋值为null-->
         <constructor-arg name="name" value="宝马"/>
@@ -14,30 +20,30 @@
         <property name="car.speed" value="200"/>
     </bean>
 
-    <bean id="car" class="com.wayne.bean.Car">
+    <bean id="car" class="com.wayne.bean.nonautowire.Car">
 
     </bean>
 
-    <bean id="a" class="com.wayne.bean.A">
+    <bean id="a" class="com.wayne.bean.nonautowire.A">
         <property name="name">
             <value><![CDATA[<hello>]]></value>  <!--CDATA装配特殊字符 <hello> -->
         </property>
     </bean>
 
-    <bean id="b" class="com.wayne.bean.B">
-        <constructor-arg name="a" type="com.wayne.bean.A" ref="a"/>
+    <bean id="b" class="com.wayne.bean.nonautowire.B">
+        <constructor-arg name="a" type="com.wayne.bean.nonautowire.A" ref="a"/>
     </bean>
 
 
-    <bean id="person" class="com.wayne.bean.Person">
+    <bean id="person" class="com.wayne.bean.nonautowire.Person">
         <!--配置集合属性-->
         <property name="cars">
             <list>
-                <bean class="com.wayne.bean.Car">
+                <bean class="com.wayne.bean.nonautowire.Car">
                     <property name="speed" value="220"/>
                     <property name="price" value="530000"/>
                 </bean>
-                <bean class="com.wayne.bean.Car">
+                <bean class="com.wayne.bean.nonautowire.Car">
                     <property name="price" value="490000"/>
                     <property name="speed" value="240"/>
                 </bean>
@@ -58,4 +64,17 @@
             </props>
         </property>
     </bean>
+
+    <!--配置独立的集合bean，以供多个bean引用-->
+    <util:list id = "cars">
+        <ref bean="car"/>
+        <ref bean="car"/>
+    </util:list>
+
+    <bean id="person1" class="com.wayne.bean.nonautowire.Person">
+        <property name="cars" ref="cars"/>
+    </bean>
+
+    <!-- 通过p命名空间为bean属性赋值-->
+    <bean id="person2" class="com.wayne.bean.nonautowire.Person" p:cars-ref="cars"/>
 </beans>

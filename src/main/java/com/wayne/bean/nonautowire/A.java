@@ -1,4 +1,4 @@
-package com.wayne.bean;
+package com.wayne.bean.nonautowire;
 
 import lombok.Data;
 
