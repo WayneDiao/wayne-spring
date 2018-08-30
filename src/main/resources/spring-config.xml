@@ -10,7 +10,7 @@
        ">
 
     <!--通过全类名即反射方式创建bean，要求类中有默认无惨构造方法-->
-    <bean id="hello" class="com.wayne.bean.nonautowire.User">
+    <bean id="hello" class="com.wayne.bean.un_autowire.User">
         <!--<property name="name" value="Spring"/>-->
         <!--<property name="name"><null/></property>--><!--赋值为null-->
         <constructor-arg name="name" value="宝马"/>
@@ -20,30 +20,30 @@
         <property name="car.speed" value="200"/>
     </bean>
 
-    <bean id="car" class="com.wayne.bean.nonautowire.Car">
+    <bean id="car" class="com.wayne.bean.un_autowire.Car">
 
     </bean>
 
-    <bean id="a" class="com.wayne.bean.nonautowire.A">
+    <bean id="a" class="com.wayne.bean.un_autowire.A">
         <property name="name">
             <value><![CDATA[<hello>]]></value>  <!--CDATA装配特殊字符 <hello> -->
         </property>
     </bean>
 
-    <bean id="b" class="com.wayne.bean.nonautowire.B">
-        <constructor-arg name="a" type="com.wayne.bean.nonautowire.A" ref="a"/>
+    <bean id="b" class="com.wayne.bean.un_autowire.B">
+        <constructor-arg name="a" type="com.wayne.bean.un_autowire.A" ref="a"/>
     </bean>
 
 
-    <bean id="person" class="com.wayne.bean.nonautowire.Person">
+    <bean id="person" class="com.wayne.bean.un_autowire.Person">
         <!--配置集合属性-->
         <property name="cars">
             <list>
-                <bean class="com.wayne.bean.nonautowire.Car">
+                <bean class="com.wayne.bean.un_autowire.Car">
                     <property name="speed" value="220"/>
                     <property name="price" value="530000"/>
                 </bean>
-                <bean class="com.wayne.bean.nonautowire.Car">
+                <bean class="com.wayne.bean.un_autowire.Car">
                     <property name="price" value="490000"/>
                     <property name="speed" value="240"/>
                 </bean>
@@ -71,10 +71,10 @@
         <ref bean="car"/>
     </util:list>
 
-    <bean id="person1" class="com.wayne.bean.nonautowire.Person">
+    <bean id="person1" class="com.wayne.bean.un_autowire.Person">
         <property name="cars" ref="cars"/>
     </bean>
 
     <!-- 通过p命名空间为bean属性赋值-->
-    <bean id="person2" class="com.wayne.bean.nonautowire.Person" p:cars-ref="cars"/>
+    <bean id="person2" class="com.wayne.bean.un_autowire.Person" p:cars-ref="cars"/>
 </beans>
