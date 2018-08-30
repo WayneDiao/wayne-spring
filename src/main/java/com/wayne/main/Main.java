@@ -1,8 +1,8 @@
 package com.wayne.main;
 
-import com.wayne.bean.nonautowire.B;
-import com.wayne.bean.nonautowire.Person;
-import com.wayne.bean.nonautowire.User;
+import com.wayne.bean.un_autowire.B;
+import com.wayne.bean.un_autowire.Person;
+import com.wayne.bean.un_autowire.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
