@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:beans-annotation.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:bean/beans-annotation.xml");
         TestObject testObject = context.getBean(TestObject.class);
         System.out.println(testObject);
 

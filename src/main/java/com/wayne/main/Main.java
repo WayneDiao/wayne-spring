@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-config.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:bean/spring-config.xml");
 
         User user = (User) context.getBean("hello");
         System.out.println(user.toString());

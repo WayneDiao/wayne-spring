@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:beans-beanfactory.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:bean/beans-beanfactory.xml");
         Car car = context.getBean("car",Car.class);
         System.out.println(car);
     }

@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:beans-scope.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:bean/beans-scope.xml");
         Car car = context.getBean("car", Car.class);
         Car car1 = context.getBean("car", Car.class);
         System.out.println(car == car1);

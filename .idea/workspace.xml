@@ -2,13 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c465d544-9bee-4f88-bab8-b17dbeb20a44" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcLoggingProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/CalcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/CalcServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/aop/application.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/notes/aop" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcLoggingProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/helloworld/CalcLoggingProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/helloworld/CalcService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/helloworld/CalcServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/aop/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/aop/helloworld/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/annotation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/annotation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/autowire/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/autowire/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/cycle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/cycle/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/factory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/factorybean/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/factorybean/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/generic/di/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/generic/di/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/properties/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/properties/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/relation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/relation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/scope/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/scope/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/bean/spel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/bean/spel/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-annotation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-annotation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-autowire.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-autowire.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-beanfactory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-beanfactory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-cycle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-cycle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-factory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-factory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-generic-di.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-generic-di.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-properties.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-properties.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-relation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-relation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-scope.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-scope.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/beans-spel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/beans-spel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean/spring-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/wayne/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wayne/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-config.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,53 +74,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CalcService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcService.java">
+      <file leaf-file-name="application.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/aop/application.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalcServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalcLoggingProxy.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcLoggingProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="368">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="391">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoggingAspect.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/LoggingAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="60" column="58" lean-forward="true" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,18 +133,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/autowire/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/autowire/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/autowire/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/autowire/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/beans-autowire.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/benas-relation.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/beans-relation.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/relation/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/scope/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/beans-scope.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/properties/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/beans-properties.xml" />
@@ -172,6 +178,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/aop/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcLoggingProxy.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/CalcServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/aop/application.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/notes/aop" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/LoggingAspect.java" />
       </list>
     </option>
   </component>
@@ -230,6 +242,61 @@
               <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wayne" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wayne" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wayne" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -249,10 +316,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaWork\spring\src\main\java\com\wayne\aop\impl" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wayne.bean.factorybean" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ideaWork\spring\src\main\resources\bean" />
       <recent name="E:\ideaWork\spring\src\main\resources" />
     </key>
   </component>
@@ -268,18 +339,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (5)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wayne.bean.factory.Main" />
-      <module name="spring" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wayne.bean.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wayne.bean.factorybean.Main" />
       <module name="spring" />
@@ -313,13 +373,24 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wayne.aop.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wayne.aop.impl.Main" />
       <module name="spring" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wayne.aop.*" />
+          <option name="PATTERN" value="com.wayne.aop.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wayne.aop.helloworld.Main" />
+      <module name="spring" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wayne.aop.helloworld.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -366,19 +437,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Main (4)" />
       <item itemvalue="Application.Main (5)" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -396,7 +467,7 @@
       <workItem from="1535463907461" duration="6353000" />
       <workItem from="1535545075327" duration="6562000" />
       <workItem from="1535870182524" duration="237000" />
-      <workItem from="1536148838638" duration="2556000" />
+      <workItem from="1536148838638" duration="8605000" />
     </task>
     <task id="LOCAL-00001" summary="bean学习结束">
       <created>1535637870538</created>
@@ -405,14 +476,22 @@
       <option name="project" value="LOCAL" />
       <updated>1535637870538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="AOP初识">
+      <created>1536153381344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536153381344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25758000" />
+    <option name="totallyTimeSpent" value="31807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -423,13 +502,13 @@
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3293348" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.26972282" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.17004265" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -444,6 +523,37 @@
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32824427" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info content_ui="combo" id="Project" order="4" weight="0.26972282" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3293348" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.32824427" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32995737" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -454,51 +564,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.0" />
     <MESSAGE value="bean学习结束" />
-    <option name="LAST_COMMIT_MESSAGE" value="bean学习结束" />
+    <MESSAGE value="AOP初识" />
+    <option name="LAST_COMMIT_MESSAGE" value="AOP初识" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/un_autowire/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/un_autowire/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/autowire/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-autowire.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/autowire/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-relation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="117" selection-start-line="11" selection-start-column="117" selection-end-line="11" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/relation/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -506,28 +580,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-scope.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-scope.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-properties.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-properties.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
@@ -555,7 +622,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-spel.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-spel.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
@@ -583,7 +650,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-cycle.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-cycle.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
@@ -611,7 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-factory.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-factory.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
@@ -642,7 +709,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-beanfactory.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-beanfactory.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
@@ -677,7 +744,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-annotation.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-annotation.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
@@ -712,7 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
@@ -754,7 +821,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/beans-generic-di.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-generic-di.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
@@ -782,45 +849,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcService.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="382">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/helloworld/CalcLoggingProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="196">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/helloworld/CalcService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        <state relative-caret-position="161">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/CalcLoggingProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/helloworld/CalcServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/helloworld/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/CalcService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/aop/application.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/notes/aop">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/CalcServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/aop/impl/LoggingAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="60" column="58" lean-forward="true" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,4 @@
-package com.wayne.aop;
+package com.wayne.aop.helloworld;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

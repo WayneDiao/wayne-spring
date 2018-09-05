@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:beans-generic-di.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:bean/beans-generic-di.xml");
 
         UserService userService = context.getBean("userService",UserService.class);
         userService.add();
