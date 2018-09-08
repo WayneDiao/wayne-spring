@@ -6,11 +6,16 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: wayne
@@ -21,11 +26,46 @@ public class JDBCTest {
 
     private ApplicationContext context = null;
     private JdbcTemplate jdbcTemplate;
+    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
 
     {
         context = new ClassPathXmlApplicationContext("classpath:jdbc/application-jdbc.xml");
         jdbcTemplate = context.getBean(JdbcTemplate.class);
+        namedParameterJdbcTemplate = context.getBean(NamedParameterJdbcTemplate.class);
+    }
+
+    /*
+    * 使用具名参数时，可以使用public int update(String sql, SqlParameterSource paramSource)
+    * 1、SQL 语句的参数名要求和类的属性名一致
+    * 2、使用SqlParameterSource的BeanPropertySqlParameterSource实现类作为参数
+    */
+    @Test
+    public void testNamedParameterJdbcTemplate2() {
+        String sql = "insert into  user values(:name,:number,:age,:gender)";
+        User user = new User();
+        user.setAge(16);
+        user.setGender("男");
+        user.setName("老掉");
+        user.setNumber("八号");
+        SqlParameterSource source = new BeanPropertySqlParameterSource(user);
+        namedParameterJdbcTemplate.update(sql,source);
+    }
+
+    /*
+    * 使用具名的参数的jdbc template
+    * 好处：可以直接使用对应参数映射相应数据，参数过多时，不需要仔细核对位置
+    * 坏处：稍显复杂
+    */
+    @Test
+    public void testNamedParameterJdbcTemplate() {
+        String sql = "insert into  user values(:name,:number,:age,:gender)";
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("name","刁凡");
+        map.put("number","今晚");
+        map.put("age",24);
+        map.put("gender","男");
+        namedParameterJdbcTemplate.update(sql,map);
     }
 
     /**

@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c465d544-9bee-4f88-bab8-b17dbeb20a44" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/jdbc/JDBCTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/jdbc/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc/application-jdbc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/AccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookStockException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/Cashier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/CashierImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wayne/transaction/TransactionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wayne/jdbc/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wayne/jdbc/JDBCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/application-jdbc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/application-jdbc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/wayne/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/wayne/main/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,40 +54,92 @@
       <file leaf-file-name="application-jdbc.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/application-jdbc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-              <folding>
-                <element signature="e#727#741#0" expanded="true" />
-                <element signature="e#784#802#0" expanded="true" />
-                <element signature="e#844#857#0" expanded="true" />
-                <element signature="e#903#924#0" expanded="true" />
-                <element signature="e#974#996#0" expanded="true" />
-                <element signature="e#1042#1063#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="271">
+              <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JDBCTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/jdbc/JDBCTest.java">
+      <file leaf-file-name="TransactionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/TransactionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+            <state relative-caret-position="345">
+              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1182#1188#0" expanded="true" />
-                <element signature="e#1809#1815#0" expanded="true" />
-                <element signature="e#1088#1098#0" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/jdbc/User.java">
+      <file leaf-file-name="BookShopService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookShopServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cashier.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/Cashier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CashierImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/CashierImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookShopDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookShopDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="382">
+              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,6 +151,7 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Aspect" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -114,15 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/spel/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/cycle/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/cycle/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/cycle/MyBeanPostProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/beans-cycle.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/factory/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/factory/StaticCarFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/factory/InstanceCarFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/factory/Main.java" />
         <option value="$PROJECT_DIR$/src/main/resources/beans-factory.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/factorybean/Car.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/bean/factorybean/Main.java" />
@@ -162,9 +213,18 @@
         <option value="$PROJECT_DIR$/src/main/resources/jdbc/db.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/bean/db.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc/application-jdbc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/jdbc/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wayne/jdbc/JDBCTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookStockException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/AccountException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc/application-jdbc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/Cashier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/CashierImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/TransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -209,7 +269,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,7 +310,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="wayne" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring" type="b2602c69:ProjectViewProjectNode" />
@@ -271,7 +331,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -313,18 +373,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTest.testQueryForObject">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wayne.aop.helloworld.Main" />
-      <module name="spring" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wayne.aop.helloworld.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TransactionTest.test5">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -351,19 +400,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="JDBCTest.testQueryForList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wayne.jdbc.*" />
+          <option name="PATTERN" value="com.wayne.transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.wayne.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.wayne.jdbc.JDBCTest" />
-      <option name="METHOD_NAME" value="testQueryForList" />
+      <option name="PACKAGE_NAME" value="com.wayne.transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.wayne.transaction.TransactionTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -374,19 +423,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="JDBCTest.testQueryForObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wayne.jdbc.*" />
+          <option name="PATTERN" value="com.wayne.transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.wayne.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.wayne.jdbc.JDBCTest" />
-      <option name="METHOD_NAME" value="testQueryForObject" />
+      <option name="PACKAGE_NAME" value="com.wayne.transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.wayne.transaction.TransactionTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -397,19 +446,19 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="JDBCTest.testQueryObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wayne.jdbc.*" />
+          <option name="PATTERN" value="com.wayne.transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.wayne.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.wayne.jdbc.JDBCTest" />
-      <option name="METHOD_NAME" value="testQueryObject" />
+      <option name="PACKAGE_NAME" value="com.wayne.transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.wayne.transaction.TransactionTest" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -420,19 +469,42 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="JDBCTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wayne.jdbc.*" />
+          <option name="PATTERN" value="com.wayne.transaction.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.wayne.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.wayne.jdbc.JDBCTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="PACKAGE_NAME" value="com.wayne.transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.wayne.transaction.TransactionTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TransactionTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wayne.transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.wayne.transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.wayne.transaction.TransactionTest" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -482,19 +554,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.JDBCTest.testUpdate" />
-      <item itemvalue="JUnit.JDBCTest.testBatchUpdate" />
-      <item itemvalue="JUnit.JDBCTest.testQueryObject" />
-      <item itemvalue="JUnit.JDBCTest.testQueryForList" />
-      <item itemvalue="JUnit.JDBCTest.testQueryForObject" />
+      <item itemvalue="JUnit.TransactionTest.test1" />
+      <item itemvalue="JUnit.TransactionTest.test2" />
+      <item itemvalue="JUnit.TransactionTest.test3" />
+      <item itemvalue="JUnit.TransactionTest.test4" />
+      <item itemvalue="JUnit.TransactionTest.test5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JDBCTest.testQueryForObject" />
-        <item itemvalue="JUnit.JDBCTest.testQueryForList" />
-        <item itemvalue="JUnit.JDBCTest.testQueryObject" />
-        <item itemvalue="JUnit.JDBCTest.testBatchUpdate" />
-        <item itemvalue="JUnit.JDBCTest.testUpdate" />
+        <item itemvalue="JUnit.TransactionTest.test5" />
+        <item itemvalue="JUnit.TransactionTest.test4" />
+        <item itemvalue="JUnit.TransactionTest.test2" />
+        <item itemvalue="JUnit.TransactionTest.test3" />
+        <item itemvalue="JUnit.TransactionTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -513,7 +585,8 @@
       <workItem from="1535545075327" duration="6562000" />
       <workItem from="1535870182524" duration="237000" />
       <workItem from="1536148838638" duration="8654000" />
-      <workItem from="1536241306404" duration="6429000" />
+      <workItem from="1536241306404" duration="6477000" />
+      <workItem from="1536410294480" duration="8168000" />
     </task>
     <task id="LOCAL-00001" summary="bean学习结束">
       <created>1535637870538</created>
@@ -543,34 +616,50 @@
       <option name="project" value="LOCAL" />
       <updated>1536243384554</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="jdbcTemplate 初识">
+      <created>1536248144348</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536248144348</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JDBCTest_test - 2018.09.06 at 22h 43m 39s.xml">
-      <configuration name="JDBCTest.test" configurationId="JUnit" />
+    <history-entry file="TransactionTest_test4 - 2018.09.08 at 22h 43m 44s.xml">
+      <configuration name="TransactionTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JDBCTest_testUpdate - 2018.09.06 at 22h 51m 47s.xml">
-      <configuration name="JDBCTest.testUpdate" configurationId="JUnit" />
+    <history-entry file="TransactionTest_test4 - 2018.09.08 at 22h 44m 24s.xml">
+      <configuration name="TransactionTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JDBCTest_testBatchUpdate - 2018.09.06 at 22h 58m 19s.xml">
-      <configuration name="JDBCTest.testBatchUpdate" configurationId="JUnit" />
+    <history-entry file="TransactionTest_test4 - 2018.09.08 at 22h 44m 55s.xml">
+      <configuration name="TransactionTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JDBCTest_testQueryObject - 2018.09.06 at 23h 04m 00s.xml">
-      <configuration name="JDBCTest.testQueryObject" configurationId="JUnit" />
+    <history-entry file="TransactionTest_test4 - 2018.09.08 at 22h 45m 31s.xml">
+      <configuration name="TransactionTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JDBCTest_testQueryObject - 2018.09.06 at 23h 06m 52s.xml">
-      <configuration name="JDBCTest.testQueryObject" configurationId="JUnit" />
+    <history-entry file="TransactionTest_test4 - 2018.09.08 at 22h 49m 52s.xml">
+      <configuration name="TransactionTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JDBCTest_testQueryForList - 2018.09.06 at 23h 15m 42s.xml">
-      <configuration name="JDBCTest.testQueryForList" configurationId="JUnit" />
+    <history-entry file="TransactionTest_test4 - 2018.09.08 at 22h 51m 27s.xml">
+      <configuration name="TransactionTest.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JDBCTest_testQueryForObject - 2018.09.06 at 23h 18m 40s.xml">
-      <configuration name="JDBCTest.testQueryForObject" configurationId="JUnit" />
+    <history-entry file="TransactionTest_test5 - 2018.09.08 at 22h 58m 37s.xml">
+      <configuration name="TransactionTest.test5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionTest_test5 - 2018.09.08 at 22h 59m 22s.xml">
+      <configuration name="TransactionTest.test5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionTest_test5 - 2018.09.08 at 23h 03m 22s.xml">
+      <configuration name="TransactionTest.test5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionTest_test5 - 2018.09.08 at 23h 06m 06s.xml">
+      <configuration name="TransactionTest.test5" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38285000" />
+    <option name="totallyTimeSpent" value="46501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -591,7 +680,7 @@
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.1716418" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.17324094" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -619,7 +708,8 @@
     <MESSAGE value="AOP初识" />
     <MESSAGE value="AOP切面五大通知" />
     <MESSAGE value="AOP基于XML形式的配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="AOP基于XML形式的配置" />
+    <MESSAGE value="jdbcTemplate 初识" />
+    <option name="LAST_COMMIT_MESSAGE" value="jdbcTemplate 初识" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -627,65 +717,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/factorybean/Car.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/factorybean/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/factorybean/CarFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-beanfactory.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/annotation/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/annotation/repository/UserRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/scope/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/annotation/TestObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-annotation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/bean/annotation/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -788,9 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -805,10 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,14 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,9 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="58" selection-start-line="13" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,16 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -936,9 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -949,13 +949,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="186" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="186" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean/db.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-spel.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-304" />
@@ -964,42 +958,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/bean/beans-properties.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/jdbc/A.aj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/jdbc/A.aj" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/application-jdbc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#727#741#0" expanded="true" />
-            <element signature="e#784#802#0" expanded="true" />
-            <element signature="e#844#857#0" expanded="true" />
-            <element signature="e#903#924#0" expanded="true" />
-            <element signature="e#974#996#0" expanded="true" />
-            <element signature="e#1042#1063#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/jdbc/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1010,15 +973,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/jdbc/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/jdbc/JDBCTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+        <state relative-caret-position="-1941">
+          <caret line="43" column="51" lean-forward="true" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1182#1188#0" expanded="true" />
-            <element signature="e#1809#1815#0" expanded="true" />
-            <element signature="e#1088#1098#0" expanded="true" />
+            <element signature="e#1252#1268#0" expanded="true" />
+            <element signature="e#1466#1472#0" expanded="true" />
+            <element signature="e#2059#2065#0" expanded="true" />
+            <element signature="e#2378#2388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookStockException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/AccountException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/application-jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc/db.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/Cashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/CashierImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/TransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wayne/transaction/BookShopServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
