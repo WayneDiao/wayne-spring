@@ -79,7 +79,7 @@ public class JDBCTest {
 
     /**
      * 获取一条记录
-     * 不是调用 queryForObject(String sql, RowMapper<T> rowMapper, @Nullable Object... args)
+     * 不是调用 queryForObject(String sql, Class<T> requiredType)
      * 而是queryForObject(String sql, RowMapper<T> rowMapper, @Nullable Object... args)
      * 1、RowMapper指定如何去映射结果集的行，常用实现类为BeanPropertyRowMapper
      * 2、使用SQL中列的别名完成列名和类属性名的映射

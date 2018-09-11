@@ -14,9 +14,7 @@
     <bean class="com.wayne.aop.xml.CalcServiceImpl" id="calcService"/>
 
     <!--配置切面bean-->
-    <bean class="com.wayne.aop.xml.LoggingAspect" id="loggingAspect">
-
-    </bean>
+    <bean class="com.wayne.aop.xml.LoggingAspect" id="loggingAspect"/>
 
     <bean class="com.wayne.aop.xml.ValidationAspect" id="validationAspect">
 
